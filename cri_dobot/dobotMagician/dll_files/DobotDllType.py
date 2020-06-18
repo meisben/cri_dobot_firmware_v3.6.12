@@ -462,7 +462,7 @@ def load():
         library_path = os.path.join( os.path.dirname(os.path.abspath(__file__)), "DobotDll.dll")
         return CDLL(library_path,  RTLD_GLOBAL)
     elif platform.system() == "Darwin" :
-        library_path = os.path.join( os.path.dirname(os.path.abspath(__file__)), "/mac/libDobotDll.dylib")
+        library_path = os.path.join( os.path.dirname(os.path.abspath(__file__)), "\mac\libDobotDll.dylib")
         return CDLL(library_path,  RTLD_GLOBAL)
     else:
         library_path = os.path.join( os.path.dirname(os.path.abspath(__file__)), "libDobotDll.so.1.0.0")
